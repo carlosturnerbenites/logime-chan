@@ -2,15 +2,15 @@ import firebase from 'firebase'
 
 import 'firebase/firestore';
 
-import config from 'scranimer/firebase/config.js'
+import config from 'logimeChan/firebase/config.js'
 
 export default firebase.initializeApp(config)
 
 const db = firebase.firestore()
 
-const settings = { timestampsInSnapshots: true }
+// const settings = { timestampsInSnapshots: true }
 
-db.settings(settings)
+// db.settings(settings)
 
 export {
   db
